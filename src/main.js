@@ -137,8 +137,7 @@ Vue.use(VueHtml5Editor, {
     'hr',
     'eraser',
     'undo',
-    'full-screen',
-    'info'
+    'full-screen'
   ],
   // 扩展模块，具体可以参考examples或查看源码
   // extended modules

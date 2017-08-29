@@ -1,7 +1,6 @@
 <template>
   <div class="page-home">
-    <vue-html5-editor :content="content" @change="updateData" :height="200"></vue-html5-editor>
-    <mt-button type="primary" @click="submit">提交</mt-button>
+    <mt-button type="primary" @click="goNewArticle">新建文章</mt-button>
   </div>
 </template>
 
@@ -15,12 +14,11 @@ export default {
     }
   },
   methods: {
-    submit () {
-      console.log(this.content)
-    },
-    updateData (c) {
-      this.content = c
+    goNewArticle () {
+      // console.log(this.content)
+      this.$router.push('/article/new')
     }
+
   }
 }
 </script>
